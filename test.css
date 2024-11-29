@@ -1,0 +1,179 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url(image\ copy\ 4.png);
+    color: #333;
+}
+
+/* Header */
+.main-header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #fff;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* Navigation Bar */
+.navigation-bar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navigation-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-bar ul li {
+    margin: 0;
+}
+
+.navigation-bar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+    text-align: center;
+}
+
+.navigation-bar ul li a:hover,
+.navigation-bar ul li .dropbtn:hover {
+    background-color: #ff64ce;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ff92cc;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.welcome-box {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-box h2 {
+    color: #000000;
+}
+
+.welcome-box p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Style for the navigation links */
+.navigation-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navigation-bar ul li {
+    margin-right: 20px;
+}
+
+.navigation-bar a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Trigger the floating up animation when the link is clicked */
+.navigation-bar a:active {
+    animation: floatUp 0.3s ease-out forwards; /* Apply float up animation */
+}
+
+/* Keyframes for floating up effect */
+@keyframes floatUp {
+    0% {
+        transform: translateY(0); /* Start at the original position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move 10px up */
+    }
+    100% {
+        transform: translateY(0); /* Return to the original position */
+    }
+}
+
+/* Optional: Add hover effect to change color */
+.navigation-bar a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+/* Hover effect for the welcome box */
+.welcome-box {
+    padding: 20px;
+    border: 2px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Smooth transition for the welcome box */
+}
+
+/* When the welcome box is hovered, it will scale (grow bigger) */
+.welcome-box:hover {
+    transform: scale(1.1); /* Scale the box by 10% when hovered */
+}

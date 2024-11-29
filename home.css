@@ -1,0 +1,84 @@
+/* General Reset */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ body {
+   font-family: 'Arial', sans-serif;
+   background-image: url(image\ copy\ 4.png);
+   color: #000; /* Black text color */
+   line-height: 1.6;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+ }
+ 
+ .bgg {
+   width: 80%;
+   max-width: 900px;
+   background-color: #ffffe6; /* Soft yellow background */
+   border: 2px solid #333; /* Dark border for structure */
+   border-radius: 10px;
+   padding: 20px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .header {
+   text-align: center;
+   margin-bottom: 20px;
+ }
+ 
+ .tit {
+   font-size: 24px;
+   font-weight: bold;
+   color: #ff6600; /* Orange for the title */
+ }
+ 
+ .image-container {
+   text-align: center;
+   margin-bottom: 20px;
+ }
+ 
+ .main-image {
+   max-width: 100%;
+   height: auto;
+   border-radius: 8px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .content {
+   padding: 10px;
+ }
+ 
+ .info {
+   margin-bottom: 20px;
+   text-align: justify;
+   font-size: 16px;
+   line-height: 1.8;
+   text-indent: 40px; /* Indent the first line */
+ }
+ 
+ .info:last-child {
+   margin-bottom: 0; /* Remove margin for the last paragraph */
+ }
+ 
+ /* Back Button Styling */
+.back-button {
+   margin-top: 20px;
+   padding: 10px 20px;
+   background-color: #a025a7; /* Blue background */
+   color: white;
+   border: none;
+   border-radius: 5px;
+   font-size: 16px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+ 
+ .back-button:hover {
+   background-color: #003399; /* Darker blue on hover */
+ }
+ 
